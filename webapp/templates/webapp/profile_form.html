@@ -1,8 +1,9 @@
 {% extends 'webapp/base.html'%}
 {% block title %}Update profile{% endblock %}
-
+{% load static %}
 {% block body %}
-<div class="container">
+<div class="container"
+    style="background-image: url( {%static 'mysite/images/body4.gif' %}");>
 	<h2 class="text-center">{{title}}</h2>
 </div>
 <div class="container col-md-8">

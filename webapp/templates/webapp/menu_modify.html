@@ -1,7 +1,9 @@
 {% extends 'webapp/base2.html'%}
 {% block title %}Add Menu{% endblock %}
 {% block body %}
-	<div class="container">
+{% load static %}
+	<div class="container"
+    style="background-image: url( {%static 'mysite/images/body4.gif' %}");>
 		<input id="tab1" type="radio" name="tabs" checked>
   	<label for="tab1">Modify Menu</label>
 

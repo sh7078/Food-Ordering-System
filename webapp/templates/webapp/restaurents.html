@@ -1,8 +1,9 @@
 {% extends 'webapp/base.html'%}
 {% block title %}Restaurants{% endblock %}
-
+{% load static %}
 {% block body %}
-<div class="container-fluid">
+<div class="container-fluid"
+    style="background-image: url( {%static 'mysite/images/body4.gif' %}");>
         <h1 class="text-center text-danger"><strong>Restaurants</strong></h1>
 </div>
 <br>

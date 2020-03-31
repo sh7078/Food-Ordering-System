@@ -6,7 +6,12 @@ from collections import Counter
 from django.urls import reverse
 from django.db.models import Q
 from .models import Customer,Restaurant,Item,Menu,Order,orderItem,User
+from webpush import send_user_notification
 
+#ye wala lga lio backend ke hisaab se or user me jisko bhejna hai wo aayega
+'''payload = {"head": "Welcome!", "body": "Hello World"}
+
+send_user_notification(user=user, payload=payload, ttl=1000)'''
 
 #### ---------- General Side -------------------#####
 

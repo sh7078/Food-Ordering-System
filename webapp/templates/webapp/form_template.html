@@ -1,5 +1,7 @@
 {% for field in form %}
-    <div class="form-group">
+
+{% load static %} 
+    <div class="form-group" style="background-image: url( {%static 'mysite/images/body4.gif' %}");>
         <div class="col-sm-offset-2 col-sm-12">
             <span class="text-danger small">{{ field.errors }}</span>
         </div>

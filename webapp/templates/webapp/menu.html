@@ -1,8 +1,9 @@
 {% extends 'webapp/base.html'%}
 {% block title %}Menu{% endblock %}
-
+{% load static %}
 {% block body %}
-	<div class="container">
+	<div class="container"
+    style="background-image: url( {%static 'mysite/images/body4.gif' %}");>
 		<h1 class="text-info mb-2"><font size="6"><strong>{{rname}}</strong></font></h1>
 		<p>
 		<font size="3"><b>Info : </b><a class="text-success"><strong>{{rinfo|safe}}</strong></a>

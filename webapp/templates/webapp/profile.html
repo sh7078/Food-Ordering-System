@@ -1,9 +1,10 @@
 {% extends 'webapp/base.html'%}
 {% block title %}Profile{% endblock %}
-
+{% load static %}
 {% block body %}
 <br>
-	<div class="container col-md-8">
+	<div class="container col-md-8"
+    style="background-image: url( {%static 'mysite/images/body4.gif' %}");>
 		 
 		<div class="row">
 		<div class=" col-md-11 toppad">   

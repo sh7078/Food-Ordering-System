@@ -1,9 +1,10 @@
 {% extends 'webapp/base2.html'%}
 {% block title %}Profile{% endblock %}
-
+{% load static %}
 {% block body %}
 <br>
-  <div class="container col-md-8">
+  <div class="container col-md-8"
+    style="background-image: url( {%static 'mysite/images/body4.gif' %}");>
     <img src="{{user.restaurant.r_logo.url}}" height="180px" width="60%">
   </div>
   <br>

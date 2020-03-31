@@ -21,6 +21,7 @@ from django.conf.urls.static import static
 urlpatterns = [
 	path('',include('webapp.urls')),
     path('admin/', admin.site.urls),
+    path('webpush/', include('webpush.urls')),
 ]
 
 if settings.DEBUG:
